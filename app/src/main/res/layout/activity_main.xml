@@ -27,8 +27,8 @@
     android:layout_marginTop="16dp">
 
     <Button
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginRight="10dp"
         android:text=""
         android:id="@+id/work_s"
@@ -36,8 +36,8 @@
         android:background="@drawable/work5" />
 
     <Button
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginRight="10dp"
         android:text=""
         android:id="@+id/house_s"
@@ -46,8 +46,8 @@
         android:background="@drawable/house2" />
 
     <Button
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginRight="10dp"
         android:text=""
         android:id="@+id/car_s"
@@ -56,8 +56,8 @@
         android:background="@drawable/walk8" />
 
     <Button
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginRight="10dp"
         android:text=""
         android:id="@+id/friend_s"
@@ -66,8 +66,8 @@
         android:background="@drawable/friends5" />
 
     <Button
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:text=""
         android:id="@+id/money_s"
         android:onClick="moneys"
@@ -76,5 +76,25 @@
 
 
 </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="‘Better life” is more about living my dream with lots of passion, lots of laughter and love, which of course brings happiness to me. Not a material thing in sight! Even though our definition of what a better life is can change over the years."
+        />
+
+    <Button
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:text="Send FeedBack"
+        android:id="@+id/emailpage"
+        android:onClick="sendemail"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:textColor="#FFF"/>
 </LinearLayout>
     </ScrollView>

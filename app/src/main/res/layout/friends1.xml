@@ -1,14 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <Button
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:id="@+id/back_friends"
-        android:onClick="backfriends"
-        android:layout_marginBottom="71dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-</RelativeLayout>
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="164dp"
+            android:layout_gravity="top"
+            android:src="@drawable/frindss">
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:id="@+id/work_s"
+                android:onClick="works"
+                android:background="@drawable/work5" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:id="@+id/house_s"
+                android:onClick="houses"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/house2" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:id="@+id/car_s"
+                android:onClick="cars"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/walk8" />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:id="@+id/friend_s"
+                android:onClick="friends"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/friends5"
+                />
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text=""
+                android:id="@+id/money_s"
+                android:onClick="moneys"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/money3" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="‘Better life” is more about living my dream with lots of passion, lots of laughter and love, which of course brings happiness to me. Not a material thing in sight! Even though our definition of what a better life is can change over the years."
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/back_money"
+            android:onClick="backmoney"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/backs" />
+    </LinearLayout>
+</ScrollView>

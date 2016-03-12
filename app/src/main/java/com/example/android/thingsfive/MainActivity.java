@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity{
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         // only email app should handle this
-        intent.putExtra(intent.EXTRA_SUBJECT, "Just Java Order For: " + name);
+        intent.putExtra(intent.EXTRA_SUBJECT, "Feed Back of: " + name);
         intent.putExtra(intent.EXTRA_TEXT, priceMessage);
         if (intent.resolveActivity(getPackageManager()) !=null) {
             startActivity(intent);
@@ -66,6 +66,11 @@ public class MainActivity extends AppCompatActivity{
     }
 
     // Criando botoes, o nome do metodo tem que ser o mesmo do onClick
+
+    public void sendemail (View view){
+        setContentView(R.layout.email);
+    }
+
     public void moneys (View view){
 
         setContentView(R.layout.money1);
@@ -170,11 +175,11 @@ public class MainActivity extends AppCompatActivity{
     private String createOrderSummary(String name, int price, Boolean addWhippedCream, Boolean addChocolate){
 
         String priceMessage = " " + name;
-        priceMessage += "\nAdd Whipped Cream? " + addWhippedCream;
-        priceMessage += "\nAdd chocolate? " + addChocolate;
-        priceMessage += "\nQuantity : " + quantity ;
+        priceMessage += "\nuseful? " + addWhippedCream;
+        priceMessage += "\nLike Design? " + addChocolate;
+        priceMessage += "\nApp Grade : " + quantity ;
         priceMessage += "\nTotal $" + price;
-        priceMessage += "\nThank You!";
+        priceMessage += "\nThanks for Use!";
         return priceMessage;
     }
 
