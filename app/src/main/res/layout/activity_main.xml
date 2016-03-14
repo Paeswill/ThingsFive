@@ -96,7 +96,7 @@
         android:id="@+id/emailpage"
         android:onClick="sendemail"
         android:layout_gravity="center_horizontal"
-        android:background="#000000"
+        android:background="@drawable/bfeedback"
         android:textColor="#FFF"/>
 </LinearLayout>
     </ScrollView>

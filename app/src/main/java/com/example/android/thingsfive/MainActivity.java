@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity{
         priceMessage += "\nuseful? " + hasknowedge;
         priceMessage += "\nLike Design? " + hasDesign;
         priceMessage += "\nApp Grade : " + quantity ;
-        priceMessage += "\nTotal $" + price;
+        
         priceMessage += "\nThanks for Use!";
         return priceMessage;
     }
