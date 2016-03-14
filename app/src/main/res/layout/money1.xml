@@ -6,18 +6,19 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    >
+    android:background="#ffffff">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#ffffff">
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="164dp"
             android:layout_gravity="top"
-            android:src="@drawable/moneyss">
+            android:src="@drawable/designdesk">
         </ImageView>
 
 
@@ -32,9 +33,9 @@
                 android:layout_height="48dp"
                 android:layout_marginRight="10dp"
                 android:text=""
-                android:id="@+id/work_s"
-                android:onClick="works"
-                android:background="@drawable/work5" />
+                android:id="@+id/idea_s"
+                android:onClick="ideas"
+                android:background="@drawable/ideaicon" />
 
             <Button
                 android:layout_width="48dp"
@@ -44,7 +45,7 @@
                 android:id="@+id/house_s"
                 android:onClick="houses"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/house2" />
+                android:background="@drawable/necessity" />
 
             <Button
                 android:layout_width="48dp"
@@ -54,7 +55,7 @@
                 android:id="@+id/car_s"
                 android:onClick="cars"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/walk8" />
+                android:background="@drawable/carac" />
 
             <Button
                 android:layout_width="48dp"
@@ -64,8 +65,7 @@
                 android:id="@+id/friend_s"
                 android:onClick="friends"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/friends5"
-                />
+                android:background="@drawable/remove" />
 
             <Button
                 android:layout_width="48dp"
@@ -74,7 +74,7 @@
                 android:id="@+id/money_s"
                 android:onClick="moneys"
                 android:layout_gravity="center_horizontal"
-                android:background="@drawable/money3" />
+                android:background="@drawable/designif" />
 
 
         </LinearLayout>
@@ -85,7 +85,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="‘Better life” is more about living my dream with lots of passion, lots of laughter and love, which of course brings happiness to me. Not a material thing in sight! Even though our definition of what a better life is can change over the years."
+            android:text="5 - Design is a way to make the technology useful! So look for a developer who puts project ( user experience and graphics) first. Take as an example the success of app stores : the little games addictive and charming design , the utilities that solve their life and are visually very cute ( I can cite among applications with charming design , Waze , Moovit , 99Taxi etc.) . Its creators are very concerned about the look beyond the resources , which is a good bet."
             />
 
         <Space

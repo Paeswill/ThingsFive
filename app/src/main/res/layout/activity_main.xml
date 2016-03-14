@@ -9,7 +9,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
 
 
     <ImageView
@@ -31,9 +32,9 @@
         android:layout_height="48dp"
         android:layout_marginRight="10dp"
         android:text=""
-        android:id="@+id/work_s"
-        android:onClick="works"
-        android:background="@drawable/work5" />
+        android:id="@+id/idea_s"
+        android:onClick="ideas"
+        android:background="@drawable/ideaicon" />
 
     <Button
         android:layout_width="48dp"
@@ -43,7 +44,7 @@
         android:id="@+id/house_s"
         android:onClick="houses"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/house2" />
+        android:background="@drawable/necessity" />
 
     <Button
         android:layout_width="48dp"
@@ -53,7 +54,7 @@
         android:id="@+id/car_s"
         android:onClick="cars"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/walk8" />
+        android:background="@drawable/carac" />
 
     <Button
         android:layout_width="48dp"
@@ -63,7 +64,7 @@
         android:id="@+id/friend_s"
         android:onClick="friends"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/friends5" />
+        android:background="@drawable/remove" />
 
     <Button
         android:layout_width="48dp"
@@ -72,7 +73,7 @@
         android:id="@+id/money_s"
         android:onClick="moneys"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/money3" />
+        android:background="@drawable/designi" />
 
 
 </LinearLayout>
@@ -83,7 +84,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="‘Better life” is more about living my dream with lots of passion, lots of laughter and love, which of course brings happiness to me. Not a material thing in sight! Even though our definition of what a better life is can change over the years."
+        android:textSize="15sp"
+        android:text="Five things that every developer needs to know to make a successful project , click on icons to start."
         />
 
     <Button

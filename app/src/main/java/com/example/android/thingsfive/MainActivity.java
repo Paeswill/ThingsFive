@@ -3,7 +3,6 @@ package com.example.android.thingsfive;
         import android.content.Intent;
         import android.net.Uri;
         import android.os.Bundle;
-        import android.support.v7.app.ActionBarActivity;
         import android.support.v7.app.AppCompatActivity;
         import android.util.Log;
         import android.view.View;
@@ -11,8 +10,6 @@ package com.example.android.thingsfive;
         import android.widget.EditText;
         import android.widget.TextView;
         import android.widget.Toast;
-
-        import java.text.NumberFormat;
 
 /**
  * This app displays an order form to order coffee.
@@ -38,19 +35,19 @@ public class MainActivity extends AppCompatActivity{
         String name = nameField.getText().toString();
         Log.v("MainActivity", "Name: " + name);
 
-        CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.wipped_cream_checkbox);
-        CheckBox chocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
+        CheckBox knowedgeCheckBox = (CheckBox) findViewById(R.id.add_knowedge);
+        CheckBox designCheckBox = (CheckBox) findViewById(R.id.add_design);
 
 
-        Boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
-        Boolean hasChocolate = chocolateCheckBox.isChecked();
+        Boolean hasknowedge = knowedgeCheckBox.isChecked();
+        Boolean hasDesign = designCheckBox.isChecked();
 
-        Log.v("MainActivity", "Has Wipped Cream: " + hasWhippedCream);
-        Log.v("MainActivity", "Has Wipped Cream: " + hasChocolate);
+        Log.v("MainActivity", "Has Wipped Cream: " + hasknowedge);
+        Log.v("MainActivity", "Has Wipped Cream: " + hasDesign);
 
 
         int price = calculatePrice();
-        String priceMessage = createOrderSummary(name,price, hasWhippedCream, hasChocolate);
+        String priceMessage = createOrderSummary(name,price, hasknowedge, hasDesign);
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
@@ -76,9 +73,9 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.money1);
     }
 
-    public void works (View view){
+    public void ideas (View view){
 
-        setContentView(R.layout.work1);
+        setContentView(R.layout.pg1);
     }
 
     public void backmoney (View view){
@@ -86,40 +83,22 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
     }
 
-    public void backwork (View view){
-
-        setContentView(R.layout.activity_main);
-    }
 
     public void houses (View view){
 
         setContentView(R.layout.house1);
     }
 
-    public void backhouse (View view){
-
-        setContentView(R.layout.activity_main);
-    }
 
     public void cars (View view){
 
         setContentView(R.layout.car1);
-    }
-    public void backcar (View view){
-
-        setContentView(R.layout.activity_main);
     }
 
     public void friends (View view){
 
         setContentView(R.layout.friends1);
     }
-
-    public void backfriends (View view){
-
-        setContentView(R.layout.activity_main);
-    }
-
 
 
     /**
@@ -153,9 +132,9 @@ public class MainActivity extends AppCompatActivity{
     }
 
     public void increment(View view) {
-        if(quantity == 100){
+        if(quantity == 10){
             //Show an error message
-            Toast.makeText(this, "You cannot have more 100 coffes", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You cannot rate more of 10", Toast.LENGTH_SHORT).show();
             //Exit this method early because there´s nothing left to do
             return;
         } quantity = quantity + 1;
@@ -165,18 +144,18 @@ public class MainActivity extends AppCompatActivity{
     public void decrement(View view) {
         if(quantity == 1){
             //Show an error message
-            Toast.makeText(this, "You cannot have lass than 1 coffe", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You cannot rate less than 1", Toast.LENGTH_SHORT).show();
             //Exit this method early because there´s nothing left to do
             return;
         } quantity = quantity - 1;
         displayQuantity(quantity);
     }
 
-    private String createOrderSummary(String name, int price, Boolean addWhippedCream, Boolean addChocolate){
+    private String createOrderSummary(String name, int price, Boolean hasknowedge, Boolean hasDesign){
 
-        String priceMessage = " " + name;
-        priceMessage += "\nuseful? " + addWhippedCream;
-        priceMessage += "\nLike Design? " + addChocolate;
+        String priceMessage = "" + name;
+        priceMessage += "\nuseful? " + hasknowedge;
+        priceMessage += "\nLike Design? " + hasDesign;
         priceMessage += "\nApp Grade : " + quantity ;
         priceMessage += "\nTotal $" + price;
         priceMessage += "\nThanks for Use!";

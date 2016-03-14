@@ -37,7 +37,7 @@
             />
 
         <CheckBox
-            android:id="@+id/wipped_cream_checkbox"
+            android:id="@+id/add_knowedge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
@@ -46,7 +46,7 @@
             />
 
         <CheckBox
-            android:id="@+id/chocolate_checkbox"
+            android:id="@+id/add_design"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="24dp"
@@ -119,12 +119,20 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
             android:layout_gravity="center"
             android:text="Send"
             android:onClick="submitOrder"
-
             android:background="#000000"
             android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/back_money"
+            android:onClick="backmoney"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/backs" />
 
 
 
