@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity{
      * This method is called when the order button is clicked.
      */
 
-
     public void submitOrder(View view) {
         EditText nameField =  (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity{
 
     }
 
-    // Criando botoes, o nome do metodo tem que ser o mesmo do onClick
+    // make buttons,  called xml when the  button is clicked.
 
     public void sendemail (View view){
         setContentView(R.layout.email);
@@ -157,7 +156,6 @@ public class MainActivity extends AppCompatActivity{
         priceMessage += "\nuseful? " + hasknowedge;
         priceMessage += "\nLike Design? " + hasDesign;
         priceMessage += "\nApp Grade : " + quantity ;
-        
         priceMessage += "\nThanks for Use!";
         return priceMessage;
     }
